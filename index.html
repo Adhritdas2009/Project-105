@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Project 103</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    </head>
+    <body class="bg bg-warning">
+        <center>
+            <h1 class="bg-info heading">Face Recognition App</h1>
+            <br>
+            <h3 class="text-capitalize bg-success heading">Model is trained on the following faces</h3>
+            <label class="bg-danger heading">Myself (Adhrit Das) | Owl | Book</label>
+            <br><br>
+            <div id="camera"></div>
+            <br>
+            <div id="result"></div>
+            <br>
+            <button class="btn btn-info" onclick="cap()">Capture<span id="objectbtn"></span></button><br><br>
+            <button class="btn btn-success" onclick="accu()">Accuracy</button><br><br>
+            <label>Item: <span id="obj"></span></label><br>
+            <label>Accuracy: <span id="accurate"></span></label>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>
